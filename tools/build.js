@@ -364,7 +364,7 @@ class BuildTask {
 
     gulp.task(`${id}-watch`, gulp.series(`${id}-build`, `${id}-demo`, `${id}-install`, gulp.parallel(`${id}-watch-wxml`, `${id}-watch-wxss`, `${id}-watch-js`, `${id}-watch-json`, `${id}-watch-copy`, `${id}-watch-install`, `${id}-watch-demo`)))
 
-    gulp.task(`${id}-dev`, gulp.series(`${id}-build`, `${id}-demo`, `${id}-install`))
+    gulp.task(`${id}-dev`, gulp.series(`${id}-clean-dist`, `${id}-build`, `${id}-demo`, `${id}-install`))
 
     gulp.task(`${id}-default`, gulp.series(`${id}-build`))
   }
