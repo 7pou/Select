@@ -1,7 +1,7 @@
 {
-  "name": "miniprogram-xigua-datepicker",
-  "version": "0.1.3",
-  "description": "miniprogram datepicker",
+  "name": "@7pound/we-select",
+  "version": "1.0.0",
+  "description": "miniprogram Select",
   "main": "miniprogram_dist/index.js",
   "scripts": {
     "dev": "gulp dev --develop",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/7pou/miniprogram-xigua-datepicker.git"
+    "url": "https://github.com/7pou/WeSelect.git"
   },
   "author": "7pou.com",
   "license": "MIT",
@@ -68,8 +68,8 @@
   },
   "dependencies": {},
   "keywords": [
-    "miniprogram",
-    "datepicker",
-    "日期选择器"
+    "miniprogram select",
+    "picker",
+    "小程序选择器"
   ]
 }
