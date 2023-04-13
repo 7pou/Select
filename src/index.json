@@ -1,6 +1,4 @@
 {
   "component": true,
-  "componentGenerics": {
-    "genericsTest": true
-  }
+  "usingComponents": {}
 }
