@@ -1,6 +1,6 @@
 {
   "name": "@7pound/we-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "miniprogram Select",
   "main": "miniprogram_dist/index.js",
   "scripts": {
