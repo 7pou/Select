@@ -1,8 +1,9 @@
 .container {
     background-color: #f8f8f8;
+    padding: 20rpx;
 }
 
-.date-block {
+.page-card {
     background-color: #fff;
     margin-bottom: 20rpx;
     padding: 20rpx;

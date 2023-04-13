@@ -1,32 +1,38 @@
-<view class="date-block" bindtap="handleOpen_1">
-    <view class="label">选择日期</view>
-    <view class="value">{{date_1}}</view>
-</view>
-<view class="date-block" bindtap="handleOpen_2">
-    <view class="label">选择日期(带有时间)</view>
-    <view class="value">{{date_2}}</view>
-</view>
+<view class="container">
+    <!-- 小程序原生picker写法 -->
+    <view class="page-card">
+        <view class="label">Picker: </view>
+        <picker 
+            range="{{mapUserSex}}" 
+            range-key="value"
+            bindchange="handlePickerChange"
+        >
+            <text wx:if="{{ pickerIndex || pickerIndex === 0 }}">{{ mapUserSex[pickerIndex].value }}</text>
+            <text wx:else style="color: #999">请选择</text>
+        </picker>
+    </view>
 
-<view class="date-block" bindtap="handleOpen_3">
-    <view class="label">选择日期区间</view>
-    <view class="value">{{date_3}}</view>
-</view>
-<view class="date-block" bindtap="handleOpen_4">
-    <view class="label">选择日期区间(带有时间)</view>
-    <view class="value">{{date_4}}</view>
-</view>
-<view class="date-block" bindtap="handleOpen_5">
-    <view class="label">选择日期(自定义标题)</view>
-    <view class="value">{{date_5}}</view>
-</view>
+    <!-- 使用Select组件的写法 -->
+    <view class="page-card">
+        <view class="label">Select: </view>
+        <Select 
+            range="{{ mapUserSex }}"
+            value-key="key"
+            range-key="value"
+            value="{{ selectValue }}"
+            bindchange="handleSelectChange"
+        />
+    </view>
 
-<view class="date-block" bindtap="handleOpen_6">
-    <view class="label">选择日期(自定义确定按钮色)</view>
-    <view class="value">{{date_6}}</view>
-</view>
-<view class="date-block" bindtap="handleOpen_7">
-    <view class="label">选择日期(自定义确定Hook)</view>
-    <view class="value">{{date_7}}</view>
-</view>
+    <!-- 使用Select组件的双向绑定 -->
+    <view class="page-card">
+        <view class="label">Select双向绑定: </view>
+        <Select 
+            range="{{ mapUserSex }}"
+            value-key="key"
+            range-key="value"
+            model:value="{{ selectValue2 }}"
+        />
+    </view>
 
-<DatePicker id="date" />
+</view>

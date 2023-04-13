@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "DatePicker": "../../components/index"
+    "Select": "../../components/Select/index"
   }
 }
